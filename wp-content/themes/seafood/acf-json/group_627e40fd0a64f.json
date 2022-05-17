@@ -1,0 +1,98 @@
+{
+    "key": "group_627e40fd0a64f",
+    "title": "Team social",
+    "fields": [
+        {
+            "key": "field_627e42ed51a4b",
+            "label": "About social",
+            "name": "about_social",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_627e43d451a4c",
+                    "label": "Social net",
+                    "name": "social_net",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "dribbble": "Dribbble",
+                        "facebook": "Facebook",
+                        "google-plus-g": "Google+",
+                        "instagram": "Instagram",
+                        "linkedin-in": "LinkedIn",
+                        "pinterest-p": "Pinterest",
+                        "skype": "Skype",
+                        "soundcloud": "SoundCloud",
+                        "tumblr": "Tumblr",
+                        "twitter": "Twitter",
+                        "vimeo-v": "Vimeo",
+                        "vk": "VKontakte",
+                        "youtube": "YouTube"
+                    },
+                    "default_value": false,
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "array",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_627e451b51a4d",
+                    "label": "Social prof",
+                    "name": "social_prof",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "65",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "about_team"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1652446673
+}
