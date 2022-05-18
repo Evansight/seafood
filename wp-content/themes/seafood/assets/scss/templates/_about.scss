@@ -1,0 +1,157 @@
+/*------------------------------------
+ Our Restaurant
+-------------------------------------*/
+.our__restaurant{
+  padding: vw(100px) 0;
+  background-color: #f3f3f3;
+  .text__wrapper{
+    position: relative;
+    h3{
+      font-family: $font;
+      @include adaptiv-font(30, 24);
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.6px;
+      line-height: 30px;
+      text-align: left;
+      margin-bottom: 0;
+    }
+    h2{
+      font-family: $sub-font;
+      @include adaptiv-font(80, 45);
+      font-weight: 400;
+      color: #00444e;
+      white-space: nowrap;
+    }
+    .about__dec{
+      position: absolute;
+      @include adaptive-value("max-width", 190, 61, 0);
+      height: auto;
+      @include adaptive-value("top", 13, 79, 0);
+      @include adaptive-value("right", 250, 48, 0);
+    }
+  }
+}
+/*------------------------------------
+ Team posts
+-------------------------------------*/
+.about_team{
+  @include adaptive-value("padding-bottom", 151, 50, 0);
+  .grid-margin-x{
+    margin-left: -1.5375rem;
+    margin-right: -1.25rem;
+  }
+  .about__team-wrapper{
+    justify-content: center;
+    align-items: center;
+    .about__block{
+      background-color: #f3f3f3;
+    }
+    .about__team-item{
+      position: relative;
+      text-align: center;
+      color: #00444e;
+      width: 100%;
+      max-width: 480px;
+      margin-top: vw(210px);
+      padding: 0 10px;
+      @include breakpoint(1441px down){
+        margin-top: vw(210px, 1441);
+      }
+      @include breakpoint(1201px down){
+        margin-top: vw(210px, 1201);
+      }
+      @include breakpoint(1025px down){
+        margin-top: vw(210px, 1025);
+      }
+      @include breakpoint(641px down){
+        margin-top: vw(210px, 641);
+      }
+    }
+
+    .about__team-img{
+      position: absolute;
+      width: 100%;
+      @include adaptive-value("max-width", 220, 165, 0);
+      height: auto;
+      @include adaptive-value("top", -108, -61, 0);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+ .team__item-inner{
+   padding: 0 36px 50px 38px;
+   @include breakpoint(641 down){
+     padding: 0 vw(36px,641) vw(50px,641) vw(38px,641);
+   }
+   .about__team-title{
+     color: #00444e;
+     font-family: $sub-font;
+     @include adaptiv-font(60, 40);
+     font-weight: 400;
+     @include adaptive-value("padding-top", 160, 130, 0);
+     padding-bottom: 21px;
+   }
+   p{
+     @include adaptiv-font(20, 15);
+     font-weight: 400;
+     font-style: normal;
+     letter-spacing: 0.4px;
+     line-height: 30px;
+     margin-bottom: 64px;
+     @include breakpoint(1025px down){
+       line-height: vw(30px, 1025);
+     }
+     @include breakpoint(840px down){
+       line-height: vw(30px, 840);
+     }
+     @include breakpoint(641px down){
+       line-height: vw(30px, 641);
+     }
+     @include breakpoint(480px down){
+       line-height: vw(30px, 480);
+     }
+   }
+   .about__team-social{
+     .stay-tuned{
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       .fab{
+         @include adaptiv-font(25, 20);
+         &:hover::before{
+           color: #dfb405;
+         }
+       }
+       .fa-instagram{
+         position: relative;
+         left: 0;
+         top: 0;
+         &:after{
+           content: none;
+         }
+       }
+       li:nth-child(1){
+         order: 3;
+       }
+       li:nth-child(2){
+         order: 1;
+       }
+       li:nth-child(3){
+         order: 2;
+       }
+     }
+     .fa-facebook:before{
+       content: '\f39e';
+       color: #1a608b;
+     }
+   }
+ }
+  .fa-linkedin-in:before,
+  .fa-facebook:before,
+  .fa-instagram:before{
+    transition: all .4s;
+  }
+}
+
+
